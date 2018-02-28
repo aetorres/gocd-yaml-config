@@ -5,7 +5,7 @@ environments:
     pipelines:
       - pipeline-C
 pipelines:
-  testpipeline:
+  "pipeline-C":
     group: initital
     materials:
       mygit:  # this is the name of material
@@ -13,9 +13,9 @@ pipelines:
         git: https://github.com/aetorres/c_test.git
         branch: master
     stages:
-      - build: 
+      - build: build1
           jobs:
-            build: 
+            build: compile
               tasks:
                - exec: # indicates type of task
                    command: /bin/bash
