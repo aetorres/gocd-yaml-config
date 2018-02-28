@@ -13,7 +13,7 @@ pipelines:
         git: https://github.com/aetorres/c_test.git
         branch: master
     stages:
-      - build: build
+      - build: build1
           jobs:
             build: compile
               tasks:
