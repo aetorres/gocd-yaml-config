@@ -13,9 +13,9 @@ pipelines:
         git: https://github.com/aetorres/c_test.git
         branch: master
     stages:
-      - build: 
+      - build:
           jobs:
-            build: 
+            build:
               tasks:
                - exec: # indicates type of task
                    command: /bin/bash
